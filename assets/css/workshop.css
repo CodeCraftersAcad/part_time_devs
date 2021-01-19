@@ -1,0 +1,69 @@
+main div#header{
+  background-color:rgb(22, 26, 30);
+  background-image: url("../images/pexels-negative-space-169573.jpg");
+  background-size: cover;
+  background-position: -20px;
+  background-blend-mode: overlay;
+}
+main div#header div.px-3{
+  text-align: right;
+  margin-right: 50px;
+  border-right: 10px solid var(--white);
+}
+
+main div#header h1,
+main div#header h2{
+  font-size: 100px !important;
+  font-weight: 900 !important;
+  line-height: 100px;
+  color: var(--white);
+}
+main div#header div.px-3 h2 span{
+  color: var(--light-blue);
+}
+#growth #percent{
+  font-size: 90px;
+  font-weight: 700;
+}
+
+#growth .left-panel{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#salaries{
+  background-color: var(--dark-blue);
+  color: var(--white);
+  width: 100%;
+  margin: 0;
+}
+
+#salaries h2{
+  font-weight: 700;
+}
+
+#salaries .row{
+  width: 90%;
+  margin: 0 auto;
+}
+
+#salaries .row h3{
+  font-weight: 700;
+}
+
+@media screen and (max-width: 450px){
+  main div#header h1,
+  main div#header h2{
+    font-size: 50px !important;
+    line-height: 50px !important;
+  }
+  footer .container{
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  footer .container p{
+    font-size: 12px;
+  }
+}

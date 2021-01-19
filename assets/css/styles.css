@@ -1,0 +1,396 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap'); */
+:root{
+  --white:#fffffc;
+  --grey:#f2f2f2;
+  --yellow:#f0c808;
+  --red:#e94f37;
+  --light-blue:#4299e1;
+  --dark-blue:#161a1e;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:"Montserrat",Arial, Helvetica, sans-serif;
+}
+main{
+  overflow-x: hidden;
+  /* width: 100%; */
+}
+.grey{
+  background-color: var(--grey);
+}
+.blue-grade{
+  background: linear-gradient(var(--light-blue),#358acf);
+}
+
+input{
+  border-radius: 0 !important;
+}
+.img-fluid{
+  padding: 0 !important;
+}
+/* nav */
+
+nav.navbar{
+  margin: 0 auto;
+  margin-bottom: -57px;
+  padding: 0;
+  transition: all .5s ease-in;
+}
+.darkbar{
+  background-color: var(--dark-blue);
+}
+a.navbar-brand img{
+  height: 40px;
+  width: auto;
+  margin: 0;
+  /* margin-left: 10px; */
+}
+
+/* end nav */
+
+
+/* header */
+
+header{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: rgb(22, 26, 30);
+  background-image: url('../images/motherboard2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  min-height: 700px;
+  color:var(--white);
+  padding: 1rem 3rem ;
+}
+header div{
+  border-left: 10px solid var(--white);
+}
+header h1,
+header h2{
+  padding-left: 30px;
+  margin: 0;
+  font-size: 150px;
+  font-weight: 900;
+  color: var(--light-blue);
+  line-height: 130px;
+  letter-spacing: .1em;
+}
+span#header-time{
+  letter-spacing: .19em;
+}
+p#header-para{
+  padding-left: 38px;
+  font-size: 20px;
+  font-weight: 700;
+
+}
+p span#cca-header a{
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+/* end header */
+
+/* main content */
+
+/* salaries */
+#salaries{
+  background-color: var(--yellow);
+  color: var(--dark-blue);
+  width: 100%;
+  margin: 0;
+}
+
+#salaries h2{
+  font-weight: 700;
+}
+
+#salaries .row{
+  width: 90%;
+  margin: 0 auto;
+}
+
+#salaries .row .col-md-4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+#salaries .row h3{
+  font-weight: 700;
+}
+
+/* end salaries */
+
+/* growth */
+
+#growth #percent{
+  font-size: 90px;
+  font-weight: 700;
+}
+
+#growth .left-panel{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* end growth */
+
+/* frustration */
+
+#frustration .right-panel{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#frustration .right-panel h2{
+  font-weight: 700;
+  font-size: 40px;
+}
+
+#frustration .right-panel p{
+  font-size: 20px;
+}
+
+/* end frustration */
+
+/* reason */
+
+#reason .row .col-md-4{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#reason .row .col-md-4 h2{
+  font-weight: 700;
+  font-size: 25px;
+}
+
+#reason .left-panel{
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+#reason .center-panel{
+  background-color: var(--yellow);
+}
+
+#reason .right-panel{
+  background-color: var(--grey);
+}
+
+/* end reason */
+
+/* versus */
+
+#versus table{
+  width: 80%;
+  margin: 0 auto;
+}
+
+#versus #asterisks{
+  width: 80%;
+  margin: 10px auto;
+}
+
+#versus #asterisks p{
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+/* end versus */
+
+/* mission */
+
+#mission .row .col-md-6{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mission .row .col-md-6 div{
+  border-left: 10px solid var(--white);
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+#mission .row .col-md-6 h2{
+  font-weight: 900;
+}
+
+#mission .row .left-panel{
+  background-color: var(--yellow);
+}
+
+#mission .row .right-panel{
+  background-color: var(--dark-blue);
+  color: var(--yellow);
+}
+
+/* end mission */
+
+/* courses */
+
+/* classes */
+
+#classes{
+  background-color: var(--light-blue);
+}
+
+#classes h2{
+  font-weight: 900;
+}
+
+#classes table{
+  width: 80%;
+  margin: 0 auto;
+}
+
+#classes table tbody tr{
+  border-bottom: none !important;
+}
+
+#classes table tbody tr td{
+  width: 33%;
+}
+
+#classes table tbody tr td p button{
+  border-radius: 0 !important;
+  width: 80%;
+}
+
+/* end classes */
+
+/* tutoring */
+
+#tutoring h2{
+  font-weight: 900;
+}
+
+#tutoring table{
+  width: 80%;
+  margin: 0 auto;
+}
+
+#tutoring table tbody tr td{
+  width: 33%;
+}
+
+#tutoring table tbody tr td p button{
+  border-radius: 0 !important;
+  width: 80%;
+}
+
+/* end tutoring */
+
+/* end courses */
+
+/* end main content */
+
+/* footer */
+
+footer{
+  background-color: var(--dark-blue);
+  color: var(--grey);
+  padding: 3rem;
+}
+
+footer .container{
+  /* width: 60%; */
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+/* end footer */
+
+/* media queires */
+
+/* 768px */
+@media screen and (min-width: 768px){
+  header h1,
+  header h2{
+    font-size: 100px;
+    line-height: 100px;
+  }
+}
+
+@media screen and (min-width: 600px){
+  header h1,
+  header h2{
+    font-size: 100px;
+    line-height: 100px;
+  }
+  td p.desktop{
+    display:block;
+  }
+  td p.mobile{
+    display: none;
+  }
+}
+
+
+/* 599px and */
+@media screen and (max-width: 599px){
+  header h1,
+  header h2{
+    font-size: 50px;
+    line-height: 50px;
+  }
+  #versus table.table thead,
+  #versus table.table tbody{
+    font-size: 12px;
+  }
+  #classes table.table thead,
+  #classes table.table tbody{
+    font-size: 12px !important;
+  }
+  #tutoring table.table thead,
+  #tutoring table.table tbody{
+    font-size: 12px !important;
+  }
+  #tutoring table.table tbody p button{
+    font-size: 12px !important;
+  }
+  td p.desktop{
+    display:none;
+  }
+  td p.mobile{
+    display: block;
+  }
+  footer .container{
+    font-size:10px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  header h1,
+  header h2{
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 281px){
+  nav.navbar{
+    margin-bottom: -250px;
+  }
+  header h1,
+  header h2{
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
