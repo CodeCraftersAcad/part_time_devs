@@ -51,6 +51,10 @@ a.navbar-brand img{
   /* margin-left: 10px; */
 }
 
+nav.navbar a{
+  color: var(--white) !important;
+}
+
 /* end nav */
 
 
