@@ -429,9 +429,6 @@ footer .container{
 
 
 @media screen and (max-width: 360px){
-  header {
-    padding-top: 300px;
-  }
   header h1,
   header h2{
     font-size: 40px;
