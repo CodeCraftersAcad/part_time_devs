@@ -266,6 +266,29 @@ p span#cca-header a{
 
 /* end mission */
 
+/* experience */
+
+#experience h2{
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+#experience .row{
+  width: 80%;
+  margin: 0 auto;
+}
+
+img[src="./assets/images/gsk.png"],
+img[src="./assets/images/state_farm.png"],
+img[src="./assets/images/gt-logo-gold.png"]{
+  height: 100px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* end experience */
+
 /* courses */
 
 /* classes */
@@ -429,6 +452,14 @@ footer .container{
   #tutoring table.table tbody tr td:nth-child(1){
     width: 10%;
   }
+  img[src="./assets/images/gsk.png"],
+  img[src="./assets/images/state_farm.png"],
+  img[src="./assets/images/gt-logo-gold.png"]{
+  height: 100px;
+  width: auto;
+  display: block;
+  margin: 15px auto;
+}
 }
 
 
