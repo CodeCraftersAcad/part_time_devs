@@ -216,6 +216,46 @@ p span#cca-header a{
 
 /* end reason */
 
+/* testimonials */
+
+#testimonials{
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+#testimonials h2{
+  font-weight: 700;
+  color: var(--yellow);
+}
+
+#testimonials .row{
+  width: 70%;
+  margin: 0 auto;
+}
+
+#held, #overall{
+  color: var(--yellow)
+}
+
+#rate-divs .testimonial{
+  width: 70%;
+  margin: 0 auto;
+}
+
+#testimonials .user-rating{
+  background-color: var(--yellow);
+  color: var(--dark-blue);
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.testimonial p{
+    line-height: 2.1rem;
+}
+
+/* end testimonials */
+
 /* versus */
 
 #versus table{
@@ -459,7 +499,7 @@ footer .container{
   width: auto;
   display: block;
   margin: 15px auto;
-}
+  }
 }
 
 
