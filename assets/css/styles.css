@@ -27,6 +27,18 @@
     }
 }
 
+/* Portrait and Landscape */
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3) {
+    :root{
+        --header-lg: 3rem;
+        --header-md: 1.8rem;
+        --header-sm: 1rem;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
