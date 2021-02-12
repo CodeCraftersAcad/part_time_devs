@@ -1,0 +1,76 @@
+/* 768px */
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 600px) {
+    td p.desktop {
+        display: block;
+    }
+
+    td p.mobile {
+        display: none;
+    }
+}
+
+
+/* 599px and */
+@media screen and (max-width: 599px) {
+    #versus table.table thead,
+    #versus table.table tbody {
+        font-size: 12px;
+    }
+
+    #classes table.table thead,
+    #classes table.table tbody {
+        font-size: 12px !important;
+    }
+
+    #tutoring table.table thead,
+    #tutoring table.table tbody {
+        font-size: 12px !important;
+    }
+
+    #tutoring table.table tbody p button {
+        font-size: 8px !important;
+    }
+
+    td p.desktop {
+        display: none;
+    }
+
+    td p.mobile {
+        display: block;
+    }
+
+    footer .container {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #tutoring table.table tbody tr td:nth-child(1) {
+        width: 10%;
+    }
+
+    img[src="./assets/images/gsk.png"],
+    img[src="./assets/images/state_farm.png"],
+    img[src="./assets/images/gt-logo-gold.png"] {
+        height: 100px;
+        width: auto;
+        display: block;
+        margin: 15px auto;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+
+    nav.navbar {
+        margin-bottom: -250px;
+    }
+}
+
+@media screen and (max-width: 281px) {
+
+}

@@ -1,0 +1,40 @@
+/* header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/motherboard2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(22, 26, 30);
+    background-blend-mode: overlay;
+    height: 90vh;
+}
+
+header h1 {
+    font-size: var(--header-lg);
+    font-weight: 900;
+    color: var(--light-blue);
+    /*line-height: 130px;*/
+    letter-spacing: .1em;
+}
+header h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: var(--header-md);
+}
+header p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--header-sm);
+    font-weight: 700;
+}
+header p span {
+    margin-left: .8rem;
+}
+
+/* End of header */

@@ -1,0 +1,67 @@
+:root {
+    --white: #fffffc;
+    --grey: #f2f2f2;
+    --yellow: #f0c808;
+    --red: #e94f37;
+    --light-blue: #4299e1;
+    --dark-blue: #161a1e;
+    --header-lg: 7.5rem;
+    --header-md: 4.37rem;
+    --header-sm: 2.25rem;
+}
+
+@media (max-width: 992px) {
+    :root{
+        --header-lg: 6.5rem;
+        --header-md: 3.37rem;
+        --header-sm: 1.25rem;
+    }
+}
+
+@media (max-width: 540px) {
+    :root{
+        --header-lg: 3rem;
+        --header-md: 2.5rem;
+        --header-sm: 1.3rem;
+    }
+}
+
+@media (max-width: 414px) {
+    :root{
+        --header-lg: 2.5rem;
+        --header-md: 2rem;
+        --header-sm: 1rem;
+    }
+}
+
+/* Portrait and Landscape */
+@media screen
+and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3) {
+    :root{
+        --header-lg: 3rem;
+        --header-md: 1.8rem;
+        --header-sm: 1rem;
+    }
+}
+
+.grey {
+    background-color: var(--grey);
+}
+
+.blue-grade {
+    background: linear-gradient(var(--light-blue), #358acf);
+}
+
+.code-yellow-text {
+    color: var(--yellow);
+}
+
+input {
+    border-radius: 0 !important;
+}
+
+.img-fluid {
+    padding: 0 !important;
+}
