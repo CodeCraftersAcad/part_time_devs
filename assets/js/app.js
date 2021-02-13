@@ -10,21 +10,23 @@ const rateDivs = document.querySelector("#rate-divs");
 
 window.addEventListener("load", async () => {
   navBar.classList.add("fixed-top");
-  const res = await fetchData("https://tranquil-reef-05344.herokuapp.com/api/ratings");
-  sessionsHeld.textContent = 10
+  // window location = index.html
+  if (window.location.pathname === "/index.html") {
+    const res = await fetchData("https://tranquil-reef-05344.herokuapp.com/api/ratings");
+    sessionsHeld.textContent = 10
 
-  // rating average
-  let rate_sum = 0;
-  for (var i = 0; i < res.ratings.length; i++) {
-    rate_sum += res.ratings[i].rating;
-  }
-  overallRating.textContent = `${(rate_sum / res.ratings.length).toFixed(2)}`;
+    // rating average
+    let rate_sum = 0;
+    for (var i = 0; i < res.ratings.length; i++) {
+      rate_sum += res.ratings[i].rating;
+    }
+    overallRating.textContent = `${(rate_sum / res.ratings.length).toFixed(2)}`;
 
-  // testi divs
-  res.ratings.map((rate, i) => {
-    const align = i % 2 === 0 ? "float-start" : "float-end";
-    const border = i % 2 === 0 ? "border-right: 2px solid #fffffc" : "border-left: 2px solid #fffffc";
-    rateDivs.innerHTML += `
+    // testi divs
+    res.ratings.map((rate, i) => {
+      const align = i % 2 === 0 ? "float-start" : "float-end";
+      const border = i % 2 === 0 ? "border-right: 2px solid #fffffc" : "border-left: 2px solid #fffffc";
+      rateDivs.innerHTML += `
       <div class="p-3 testimonial my-3 clearfix" style="${border}">
         <p class="${align}">
           <span class="user-rating">${rate.rating} &#x2605;</span> 
@@ -33,10 +35,30 @@ window.addEventListener("load", async () => {
         </p>
       </div>
     `
-  }).slice(0, 4);
+    }).slice(0, 4);
+  }
 
+  // location = challenges html
+  // render challenges
+  if (window.location.pathname === "/challenges.html") {
+    const challengeList = document.querySelector("#challenges");
+    images.map(img => {
+      challengeList.innerHTML += `
+        <div class="col-lg-3 col-md-4 col-sm-6 code">
+          <img src=${img.src} alt="code-challenge-${img.id}"/>
+          <p class="text-center">LOST?</p>
+          <p>
+            <button class="btn btn-primary" 
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/codecraftersacad/javascript-1hr'});return false;">1 HOUR</button>
+            <button class="btn btn-primary"
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/codecraftersacad/javascript-2hr'});return false;">2 HOURS</button>
+          </p>
+        </div>
+      `
+    })
+  }
 })
-
+// make navbar fixed top on page scroll
 window.addEventListener("scroll", () => {
   if (window.scrollY <= 4) {
     navBar.classList.add("fixed-top");
@@ -48,7 +70,7 @@ window.addEventListener("scroll", () => {
     navBar.classList.remove("fixed-top", "darkbar")
   }
 })
-
+// fetch data for ratings
 async function fetchData(url) {
   const data = await fetch(url);
   return data.json();

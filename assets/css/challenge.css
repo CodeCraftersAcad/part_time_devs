@@ -1,0 +1,32 @@
+body, nav, nav.navbar, nav.container-fluid{
+  overflow-x: hidden !important;
+}
+header h1.challenges{
+  font-size: 2.7rem;
+}
+
+#code-challenges h3{
+  font-weight: 700;
+}
+
+#challenges{
+  width: 80%;
+  margin: 0 auto;
+}
+
+#challenges .code img{
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  display:block;
+  margin: 0 auto;
+}
+
+.code p button{
+  width: 90px;
+  margin: 5px;
+  font-size: 12px;
+  border-radius: 0;
+  background-color: #161a1e;
+  color: #fffffc;
+}
