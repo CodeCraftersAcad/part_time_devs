@@ -54,8 +54,9 @@ and (-webkit-device-pixel-ratio: 3) {
     background: linear-gradient(var(--light-blue), #358acf);
 }
 
-.code-yellow-text {
+.code-yellow-text a {
     color: var(--yellow);
+    text-decoration: none;
 }
 
 input {
