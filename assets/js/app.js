@@ -8,34 +8,34 @@ const sessionsHeld = document.querySelector("#held");
 const overallRating = document.querySelector("#overall");
 const rateDivs = document.querySelector("#rate-divs");
 
-window.addEventListener("load", async () => {
-  navBar.classList.add("fixed-top");
-  const res = await fetchData("https://tranquil-reef-05344.herokuapp.com/api/ratings");
-  sessionsHeld.textContent = 10
+// window.addEventListener("load", async () => {
+//   navBar.classList.add("fixed-top");
+//   const res = await fetchData("https://tranquil-reef-05344.herokuapp.com/api/ratings");
+//   sessionsHeld.textContent = 10
 
-  // rating average
-  let rate_sum = 0;
-  for (var i = 0; i < res.ratings.length; i++) {
-    rate_sum += res.ratings[i].rating;
-  }
-  overallRating.textContent = `${(rate_sum / res.ratings.length).toFixed(2)}`;
+//   // rating average
+//   let rate_sum = 0;
+//   for (var i = 0; i < res.ratings.length; i++) {
+//     rate_sum += res.ratings[i].rating;
+//   }
+//   overallRating.textContent = `${(rate_sum / res.ratings.length).toFixed(2)}`;
 
-  // testi divs
-  res.ratings.map((rate, i) => {
-    const align = i % 2 === 0 ? "float-start" : "float-end";
-    const border = i % 2 === 0 ? "border-right: 2px solid #fffffc" : "border-left: 2px solid #fffffc";
-    rateDivs.innerHTML += `
-      <div class="p-3 testimonial my-3 clearfix" style="${border}">
-        <p class="${align}">
-          <span class="user-rating">${rate.rating} &#x2605;</span> 
-          <span class="user-name"><em>${rate.fname} ${rate.lname}</em></span> -
-          <span class="user-comment"><b>&#8220;</b> ${rate.comment} <b>&#8221;</b></span>
-        </p>
-      </div>
-    `
-  }).slice(0, 4);
+//   // testi divs
+//   res.ratings.map((rate, i) => {
+//     const align = i % 2 === 0 ? "float-start" : "float-end";
+//     const border = i % 2 === 0 ? "border-right: 2px solid #fffffc" : "border-left: 2px solid #fffffc";
+//     rateDivs.innerHTML += `
+//       <div class="p-3 testimonial my-3 clearfix" style="${border}">
+//         <p class="${align}">
+//           <span class="user-rating">${rate.rating} &#x2605;</span> 
+//           <span class="user-name"><em>${rate.fname} ${rate.lname}</em></span> -
+//           <span class="user-comment"><b>&#8220;</b> ${rate.comment} <b>&#8221;</b></span>
+//         </p>
+//       </div>
+//     `
+//   }).slice(0, 4);
 
-})
+// })
 
 window.addEventListener("scroll", () => {
   if (window.scrollY <= 4) {
