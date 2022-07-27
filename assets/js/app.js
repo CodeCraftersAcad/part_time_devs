@@ -21,19 +21,30 @@ window.addEventListener("load", async () => {
   overallRating.textContent = `${(rate_sum / res.ratings.length).toFixed(2)}`;
 
   // testi divs
-  res.ratings.map((rate, i) => {
-    const align = i % 2 === 0 ? "float-start" : "float-end";
-    const border = i % 2 === 0 ? "border-right: 2px solid #fffffc" : "border-left: 2px solid #fffffc";
-    rateDivs.innerHTML += `
-      <div class="p-3 testimonial my-1 clearfix">
-        <p>
-          <span class="user-rating">${rate.rating} &#x2605;</span> 
-          <span class="user-name"><em>${rate.fname} ${rate.lname}</em></span> -
-          <span class="user-comment"><b>&#8220;</b> ${rate.comment} <b>&#8221;</b></span>
-        </p>
-      </div>
-    `
-  }).slice(0, 4);
+  let spinner = new Image();
+  spinner.src = "./assets/images/loading_icon_two.gif";
+  spinner.alt = "Loading spinner";
+  spinner.height = "100";
+  spinner.width = "90";
+  spinner.style.display = "block";
+  spinner.style.margin = "0 auto"
+  if (!res.ratings.length) {
+    rateDivs.append(spinner);
+  } else {
+    res.ratings.map((rate, i) => {
+      const align = i % 2 === 0 ? "float-start" : "float-end";
+      const border = i % 2 === 0 ? "border-right: 2px solid #fffffc" : "border-left: 2px solid #fffffc";
+      rateDivs.innerHTML += `
+        <div class="p-3 testimonial my-1 clearfix">
+          <p>
+            <span class="user-rating">${rate.rating} &#x2605;</span> 
+            <span class="user-name"><em>${rate.fname} ${rate.lname}</em></span> -
+            <span class="user-comment"><b>&#8220;</b> ${rate.comment} <b>&#8221;</b></span>
+          </p>
+        </div>
+      `
+    }).slice(0, 4);
+  }
 
 })
 
