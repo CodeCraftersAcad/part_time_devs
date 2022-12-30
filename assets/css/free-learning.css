@@ -32,3 +32,10 @@
     font-weight: bold;
     color: var(--light-blue)
 }
+
+#free-ws{
+    display: block;
+    width: 400 !important; 
+    height: 300;
+}
+
