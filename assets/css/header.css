@@ -46,3 +46,24 @@ ul.nav i {
 }
 
 /* End of header */
+@media screen and (max-width: 640px) {
+    header h1 {
+        font-size: 60px;
+    }
+
+    header h2 {
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    header h2 {
+        font-size: 25px;
+    }
+
+}

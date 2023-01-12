@@ -25,6 +25,7 @@
 #salaries .row h3 {
     font-weight: 700;
 }
+
 /* end salaries */
 
 /* growth */
@@ -39,6 +40,7 @@
     justify-content: center;
     align-items: center;
 }
+
 /* end growth */
 
 /* frustration */
@@ -57,6 +59,7 @@
 #frustration .right-panel p {
     font-size: 20px;
 }
+
 /* end frustration */
 
 /* reason */
@@ -84,7 +87,22 @@
 #reason .right-panel {
     background-color: var(--grey);
 }
+
 /* end reason */
+
+/* beginner to advanced */
+#beg-to-adv {
+    background-color: var(--yellow);
+}
+
+#beg-to-adv a {
+    background-color: var(--dark-blue);
+    color: var(--yellow);
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* beginner to advanced */
 
 /* testimonials */
 #testimonials {
@@ -102,7 +120,8 @@
     margin: 0 auto;
 }
 
-#held, #overall {
+#held,
+#overall {
     color: var(--yellow)
 }
 
@@ -122,6 +141,7 @@
 .testimonial p {
     line-height: 2.1rem;
 }
+
 /* end testimonials */
 
 /* versus */
@@ -140,6 +160,7 @@
     padding: 0;
     font-size: 12px;
 }
+
 /* end versus */
 
 /* mission */
@@ -168,6 +189,7 @@
     background-color: var(--dark-blue);
     color: var(--yellow);
 }
+
 /* end mission */
 
 /* experience */
@@ -189,6 +211,7 @@ img[src="./assets/images/gt-logo-gold.png"] {
     display: block;
     margin: 0 auto;
 }
+
 /* end experience */
 
 /* courses */
@@ -219,6 +242,7 @@ img[src="./assets/images/gt-logo-gold.png"] {
     width: 80%;
     font-size: 10px;
 }
+
 /* end classes */
 
 /* tutoring */
@@ -240,6 +264,7 @@ img[src="./assets/images/gt-logo-gold.png"] {
     width: 80%;
     font-size: 10px !important;
 }
+
 /* end tutoring */
 /* end courses */
 
@@ -263,4 +288,10 @@ img[src="./assets/images/gt-logo-gold.png"] {
     margin: 0 auto;
     color: var(--white)
 }
+
 /* end contact */
+
+/* footer */
+footer .container p a {
+    color: var(--white);
+}
