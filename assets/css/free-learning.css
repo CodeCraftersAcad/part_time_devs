@@ -1,44 +1,49 @@
-#week-one{
+#week-one,
+#week_two {
     background-color: var(--dark-blue);
     color: var(--white);
     min-height: 550px;
 }
 
-#week-one div div h2{
+#week-one div div h2,
+#week-two div div h2 {
     color: var(--yellow);
     font-weight: bold;
     font-size: 50px;
 }
 
-#week-one div div p{
+#week-one div div p,
+#week-two div div p {
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 5px;
 }
 
-#week-one div div p small{
+#week-one div div p small,
+#week-two div div p small {
     font-weight: normal;
     font-size: 20px;
 }
 
-#week-one .col-md-6 {
+#week-one .col-md-6,
+#week-two .col-md-6 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#what-is h3{
+#what-is h3 {
     font-weight: bold;
     color: var(--light-blue)
 }
 
-#free-ws{
+#free-ws {
     display: block;
-    width: 400 !important; 
+    width: 400 !important;
     height: 300;
 }
 
-#mission p{
+#mission p {
     font-size: 32px;
 }
