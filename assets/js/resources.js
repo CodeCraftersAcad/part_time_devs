@@ -18,30 +18,34 @@ resourceList.style.color = "#4299e1"
 resourceArr.map((r, i) => {
     if (r.type === "youtube") {
         resourceList.innerHTML += `
+        <div class="col-md-4 p-3">
             <div class="d-flex justify-content-center align-items-center">
-                <div class="col-md-4 p-3">
-                    <div>
-                        <iframe width="300" height="200" src="https://www.youtube.com/embed/${r.link}" style="display: block; margin: 0 auto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <div>
-                        <h4><b>${r.title}</b></h4>
-                        <p>${r.text}</p>
+                <div>
+                        <div>
+                            <iframe width="300" height="200" src="https://www.youtube.com/embed/${r.link}" style="display: block; margin: 0 auto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <h4><b>${r.title}</b></h4>
+                            <p>${r.text}</p>
+                        </div>
                     </div>
                 </div>
             </div>
                     `
     } else {
         resourceList.innerHTML += `
+        <div class="col-md-4 p-3">
             <div class="d-flex justify-content-center align-items-center">
-                <div class="col-md-4 p-3">
-                    <div>
-                        <a href="${r.link}">
-                            <img src="${r.img}" alt="${r.text}" style="height: 200px; width: auto; display: block; margin: 0 auto;"/>
-                        </a>
-                    </div>
-                    <div>
-                        <h4><b>${r.title}</b></h4>
-                        <p>${r.text}</p>
+                <div>
+                        <div>
+                            <a href="${r.link}">
+                                <img src="${r.img}" alt="${r.text}" style="height: 200px; width: auto; display: block; margin: 0 auto;"/>
+                            </a>
+                        </div>
+                        <div>
+                            <h4><b>${r.title}</b></h4>
+                            <p>${r.text}</p>
+                        </div>
                     </div>
                 </div>
             </div>
