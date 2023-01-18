@@ -1,0 +1,7 @@
+.resource-img {
+    transition: transform .2s;
+}
+
+.resource-img:hover {
+    transform: scale(1.5);
+}

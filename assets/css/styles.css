@@ -5,6 +5,7 @@
 @import "sections.css";
 @import "mobile-styling.css";
 @import "free-learning.css";
+@import "resources.css";
 
 * {
     margin: 0;
