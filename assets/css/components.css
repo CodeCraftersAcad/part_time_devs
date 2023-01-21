@@ -20,7 +20,23 @@ a.navbar-brand img {
 nav.navbar a {
     color: var(--white) !important;
 }
+
 /* end nav */
+
+/* donate button */
+
+#donate-btn {
+    position: fixed;
+    background-color: var(--dark-blue);
+    color: var(--yellow);
+    top: 80px;
+    right: 10px;
+    border-radius: 0;
+    width: 150px;
+    font-weight: bold;
+}
+
+/* donate button */
 
 /* footer */
 footer {
@@ -34,4 +50,5 @@ footer .container {
     margin: 0 auto;
     font-size: 16px;
 }
+
 /* end footer */

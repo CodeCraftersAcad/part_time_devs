@@ -6,6 +6,7 @@
 @import "mobile-styling.css";
 @import "free-learning.css";
 @import "resources.css";
+@import "donate.css";
 
 * {
     margin: 0;
@@ -16,6 +17,7 @@
 
 body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 main {

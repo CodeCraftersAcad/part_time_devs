@@ -55,6 +55,9 @@ ul.nav i {
         font-size: 40px;
     }
 
+    .navbar-nav li {
+        background-color: var(--dark-blue);
+    }
 }
 
 @media screen and (max-width: 440px) {
@@ -65,5 +68,4 @@ ul.nav i {
     header h2 {
         font-size: 25px;
     }
-
 }

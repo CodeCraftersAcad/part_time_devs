@@ -1,0 +1,15 @@
+#donate-link {
+    background-color: var(--yellow);
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#donate-link a {
+    background-color: var(--dark-blue);
+    border-radius: 0;
+    min-width: 200px;
+    color: var(--yellow);
+    font-weight: bold;
+}
