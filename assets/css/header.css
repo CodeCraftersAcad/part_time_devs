@@ -45,6 +45,10 @@ ul.nav i {
     color: var(--white);
 }
 
+ul.navbar-nav li a {
+    font-size: 14px;
+}
+
 /* End of header */
 @media screen and (max-width: 640px) {
     header h1 {

@@ -1,11 +1,13 @@
 #week-one,
-#week_two {
+#week_two,
+#week-three {
     background-color: var(--dark-blue);
     color: var(--white);
     min-height: 550px;
 }
 
 #week-one div div h2,
+#week-three div div h2,
 #week-two div div h2 {
     color: var(--yellow);
     font-weight: bold;
@@ -13,6 +15,7 @@
 }
 
 #week-one div div p,
+#week-three div div p,
 #week-two div div p {
     font-weight: bold;
     font-size: 25px;
@@ -20,12 +23,14 @@
 }
 
 #week-one div div p small,
+#week-three div div p small,
 #week-two div div p small {
     font-weight: normal;
     font-size: 20px;
 }
 
 #week-one .col-md-6,
+#week-three .col-md-6,
 #week-two .col-md-6 {
     display: flex;
     flex-direction: column;
